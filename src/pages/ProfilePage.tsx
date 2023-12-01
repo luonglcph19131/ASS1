@@ -1,9 +1,7 @@
-import Header from "../components/elements/Header";
 
 const ProfilePage = () => {
     return (
       <>
-      <Header></Header>
         <div className="profile-card">
   <img src="img/anh dai dien.jpg" alt="Avatar" className="profile-picture" />
   <h1 className="name">Lê Chí Lương</h1>

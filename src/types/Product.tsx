@@ -1,13 +1,24 @@
-type ProductRate = {
-    rate: number
-    count: number
+import { Category } from "./Category";
+
+export type ProductDetailType = Product & {
+  productListRalated: Product[];
 }
 
 export type Product = {
-    id: number
-    title: string
-    price: number
-    image: string
-    // ....
-    rating: ProductRate
-}
+  _id: string;
+  title: string;
+  image: string;
+  category: Category;
+  description: string;
+  price: number;
+  rate: number;
+};
+
+export type ProductFormParams = {
+  title: string;
+  image: string;
+  category: string;
+  description: string;
+  price: number;
+  rate: number;
+};
